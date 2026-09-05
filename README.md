@@ -137,7 +137,162 @@ A solved snapshot can be exported from `regular_schedule_table`.
 <details>
 <summary>Overtime forecast recovery</summary>
 
-A solved snapshot can be exported from `ot_attainment_table`.
+<details>
+<summary>Overtime forecast recovery — part 1</summary>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Original Forecast</th>
+      <th>Solved Regular</th>
+      <th>For OT</th>
+      <th>Solved OT</th>
+      <th>Remaining After OT</th>
+    </tr>
+    <tr>
+      <th>Product</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>A</th>
+      <td>3000000</td>
+      <td>46590</td>
+      <td>2953410</td>
+      <td>1,293,512.00</td>
+      <td>1,659,898.00</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <td>3100000</td>
+      <td>3100000</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <td>4566000</td>
+      <td>4566000</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>D</th>
+      <td>295000</td>
+      <td>295000</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>E</th>
+      <td>1233000</td>
+      <td>209891</td>
+      <td>1023109</td>
+      <td>1,023,109.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>F</th>
+      <td>1234000</td>
+      <td>1232000</td>
+      <td>2000</td>
+      <td>2,000.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>G</th>
+      <td>134500</td>
+      <td>0</td>
+      <td>134500</td>
+      <td>134,500.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>H</th>
+      <td>1234000</td>
+      <td>0</td>
+      <td>1234000</td>
+      <td>297,950.00</td>
+      <td>936,050.00</td>
+    </tr>
+    <tr>
+      <th>I</th>
+      <td>8765000</td>
+      <td>8763000</td>
+      <td>2000</td>
+      <td>2,000.00</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+<details>
+<summary>Overtime forecast recovery — part 2</summary>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OT Attainment</th>
+    </tr>
+    <tr>
+      <th>Product</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>A</th>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>D</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>E</th>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>F</th>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>G</th>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>H</th>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <th>I</th>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
 
 </details>
 <!-- END TABLE:ot-attainment -->
@@ -147,7 +302,7 @@ A solved snapshot can be exported from `ot_attainment_table`.
 <summary>Material order plan</summary>
 
 <details>
-<summary>Material orders -- Sorted by Material</summary>
+<summary>1. Material orders -- Sorted by Material</summary>
 
 <table border="1" class="dataframe">
   <thead>
@@ -330,7 +485,7 @@ A solved snapshot can be exported from `ot_attainment_table`.
 </details>
 
 <details>
-<summary>Material orders -- Sorted by Day</summary>
+<summary>2. Material orders -- Sorted by Day</summary>
 
 <table border="1" class="dataframe">
   <thead>
@@ -519,9 +674,6 @@ A solved snapshot can be exported from `ot_attainment_table`.
 <!-- BEGIN TABLE:warehouse -->
 <details>
 <summary>Warehouse occupation</summary>
-
-<details>
-<summary>Warehouse occupation — part 1</summary>
 
 <table border="1" class="dataframe">
   <thead>
@@ -756,8 +908,6 @@ A solved snapshot can be exported from `ot_attainment_table`.
 
 </details>
 
-
-</details>
 <!-- END TABLE:warehouse -->
 
 ## Scope and assumptions
