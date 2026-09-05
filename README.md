@@ -146,7 +146,372 @@ A solved snapshot can be exported from `ot_attainment_table`.
 <details>
 <summary>Material order plan</summary>
 
-A solved snapshot can be exported from `order_material_first`.
+<details>
+<summary>Material orders — part 1</summary>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Arrival Day</th>
+      <th>Order Quantity</th>
+      <th>Containers</th>
+      <th>Tier</th>
+      <th>Tier Lower</th>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <th>Order Day</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Paper</th>
+      <th>1</th>
+      <td>7</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>2</th>
+      <td>8</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>3</th>
+      <td>9</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>4</th>
+      <td>10</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>5</th>
+      <td>11</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>6</th>
+      <td>12</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>7</th>
+      <td>13</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>8</th>
+      <td>14</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>12</th>
+      <td>18</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>14</th>
+      <td>20</td>
+      <td>2,810.81</td>
+      <td>1</td>
+      <td>T0/1</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>19</th>
+      <td>25</td>
+      <td>9,000.00</td>
+      <td>3</td>
+      <td>T0/1</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>22</th>
+      <td>28</td>
+      <td>12,000.00</td>
+      <td>4</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>String</th>
+      <th>3</th>
+      <td>7</td>
+      <td>25,000.00</td>
+      <td>5</td>
+      <td>T1/1</td>
+      <td>14,000.00</td>
+    </tr>
+    <tr>
+      <th>String</th>
+      <th>24</th>
+      <td>28</td>
+      <td>3,719.96</td>
+      <td>1</td>
+      <td>T0/1</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Glue</th>
+      <th>1</th>
+      <td>13</td>
+      <td>660.89</td>
+      <td>1</td>
+      <td>T0/2</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Poly Etylen</th>
+      <th>2</th>
+      <td>8</td>
+      <td>10,000.00</td>
+      <td>5</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+    <tr>
+      <th>Poly Etylen</th>
+      <th>8</th>
+      <td>14</td>
+      <td>10,110.00</td>
+      <td>6</td>
+      <td>T1/1</td>
+      <td>9,800.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+<details>
+<summary>Material orders — part 2</summary>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Tier Upper</th>
+      <th>Discount</th>
+      <th>Original Unit Price</th>
+      <th>Discounted Unit Price</th>
+      <th>Purchase Subtotal</th>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <th>Order Day</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Paper</th>
+      <th>1</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>2</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>3</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>4</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>5</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>6</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>7</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>8</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>12</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>14</th>
+      <td>9,800.00</td>
+      <td>0.00</td>
+      <td>300.00</td>
+      <td>300.00</td>
+      <td>843,243.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>19</th>
+      <td>9,800.00</td>
+      <td>0.00</td>
+      <td>300.00</td>
+      <td>300.00</td>
+      <td>2,700,000.00</td>
+    </tr>
+    <tr>
+      <th>Paper</th>
+      <th>22</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>300.00</td>
+      <td>297.00</td>
+      <td>3,564,000.00</td>
+    </tr>
+    <tr>
+      <th>String</th>
+      <th>3</th>
+      <td>28,000.00</td>
+      <td>0.02</td>
+      <td>20.00</td>
+      <td>19.60</td>
+      <td>490,000.00</td>
+    </tr>
+    <tr>
+      <th>String</th>
+      <th>24</th>
+      <td>14,000.00</td>
+      <td>0.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>74,399.24</td>
+    </tr>
+    <tr>
+      <th>Glue</th>
+      <th>1</th>
+      <td>4,000.00</td>
+      <td>0.01</td>
+      <td>40.00</td>
+      <td>39.60</td>
+      <td>26,171.28</td>
+    </tr>
+    <tr>
+      <th>Poly Etylen</th>
+      <th>2</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>500.00</td>
+      <td>495.00</td>
+      <td>4,950,000.00</td>
+    </tr>
+    <tr>
+      <th>Poly Etylen</th>
+      <th>8</th>
+      <td>14,000.00</td>
+      <td>0.01</td>
+      <td>500.00</td>
+      <td>495.00</td>
+      <td>5,004,450.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
 
 </details>
 <!-- END TABLE:material-orders -->
@@ -155,7 +520,242 @@ A solved snapshot can be exported from `order_material_first`.
 <details>
 <summary>Warehouse occupation</summary>
 
-A solved snapshot can be exported from `df_warehouse`. This report shows ending occupation; the model's capacity constraint checks opening occupation after arrivals.
+<details>
+<summary>Warehouse occupation — part 1</summary>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Used Space</th>
+      <th>Remaining Space</th>
+      <th>Total Capacity</th>
+      <th>% Free</th>
+    </tr>
+    <tr>
+      <th>Day</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Day 1</th>
+      <td>995.98</td>
+      <td>1004.02</td>
+      <td>2000.00</td>
+      <td>50.2%</td>
+    </tr>
+    <tr>
+      <th>Day 2</th>
+      <td>859.03</td>
+      <td>1140.97</td>
+      <td>2000.00</td>
+      <td>57.0%</td>
+    </tr>
+    <tr>
+      <th>Day 3</th>
+      <td>727.47</td>
+      <td>1272.53</td>
+      <td>2000.00</td>
+      <td>63.6%</td>
+    </tr>
+    <tr>
+      <th>Day 4</th>
+      <td>640.88</td>
+      <td>1359.12</td>
+      <td>2000.00</td>
+      <td>68.0%</td>
+    </tr>
+    <tr>
+      <th>Day 5</th>
+      <td>640.88</td>
+      <td>1359.12</td>
+      <td>2000.00</td>
+      <td>68.0%</td>
+    </tr>
+    <tr>
+      <th>Day 6</th>
+      <td>640.88</td>
+      <td>1359.12</td>
+      <td>2000.00</td>
+      <td>68.0%</td>
+    </tr>
+    <tr>
+      <th>Day 7</th>
+      <td>920.90</td>
+      <td>1079.10</td>
+      <td>2000.00</td>
+      <td>54.0%</td>
+    </tr>
+    <tr>
+      <th>Day 8</th>
+      <td>1068.85</td>
+      <td>931.15</td>
+      <td>2000.00</td>
+      <td>46.6%</td>
+    </tr>
+    <tr>
+      <th>Day 9</th>
+      <td>1009.60</td>
+      <td>990.40</td>
+      <td>2000.00</td>
+      <td>49.5%</td>
+    </tr>
+    <tr>
+      <th>Day 10</th>
+      <td>1042.01</td>
+      <td>957.99</td>
+      <td>2000.00</td>
+      <td>47.9%</td>
+    </tr>
+    <tr>
+      <th>Day 11</th>
+      <td>1075.61</td>
+      <td>924.39</td>
+      <td>2000.00</td>
+      <td>46.2%</td>
+    </tr>
+    <tr>
+      <th>Day 12</th>
+      <td>1104.93</td>
+      <td>895.07</td>
+      <td>2000.00</td>
+      <td>44.8%</td>
+    </tr>
+    <tr>
+      <th>Day 13</th>
+      <td>1129.60</td>
+      <td>870.40</td>
+      <td>2000.00</td>
+      <td>43.5%</td>
+    </tr>
+    <tr>
+      <th>Day 14</th>
+      <td>1264.00</td>
+      <td>736.00</td>
+      <td>2000.00</td>
+      <td>36.8%</td>
+    </tr>
+    <tr>
+      <th>Day 15</th>
+      <td>1184.46</td>
+      <td>815.54</td>
+      <td>2000.00</td>
+      <td>40.8%</td>
+    </tr>
+    <tr>
+      <th>Day 16</th>
+      <td>1110.80</td>
+      <td>889.20</td>
+      <td>2000.00</td>
+      <td>44.5%</td>
+    </tr>
+    <tr>
+      <th>Day 17</th>
+      <td>1024.50</td>
+      <td>975.50</td>
+      <td>2000.00</td>
+      <td>48.8%</td>
+    </tr>
+    <tr>
+      <th>Day 18</th>
+      <td>985.61</td>
+      <td>1014.39</td>
+      <td>2000.00</td>
+      <td>50.7%</td>
+    </tr>
+    <tr>
+      <th>Day 19</th>
+      <td>985.61</td>
+      <td>1014.39</td>
+      <td>2000.00</td>
+      <td>50.7%</td>
+    </tr>
+    <tr>
+      <th>Day 20</th>
+      <td>1013.72</td>
+      <td>986.28</td>
+      <td>2000.00</td>
+      <td>49.3%</td>
+    </tr>
+    <tr>
+      <th>Day 21</th>
+      <td>927.50</td>
+      <td>1072.50</td>
+      <td>2000.00</td>
+      <td>53.6%</td>
+    </tr>
+    <tr>
+      <th>Day 22</th>
+      <td>761.68</td>
+      <td>1238.32</td>
+      <td>2000.00</td>
+      <td>61.9%</td>
+    </tr>
+    <tr>
+      <th>Day 23</th>
+      <td>685.86</td>
+      <td>1314.14</td>
+      <td>2000.00</td>
+      <td>65.7%</td>
+    </tr>
+    <tr>
+      <th>Day 24</th>
+      <td>599.53</td>
+      <td>1400.47</td>
+      <td>2000.00</td>
+      <td>70.0%</td>
+    </tr>
+    <tr>
+      <th>Day 25</th>
+      <td>574.37</td>
+      <td>1425.63</td>
+      <td>2000.00</td>
+      <td>71.3%</td>
+    </tr>
+    <tr>
+      <th>Day 26</th>
+      <td>574.37</td>
+      <td>1425.63</td>
+      <td>2000.00</td>
+      <td>71.3%</td>
+    </tr>
+    <tr>
+      <th>Day 27</th>
+      <td>574.37</td>
+      <td>1425.63</td>
+      <td>2000.00</td>
+      <td>71.3%</td>
+    </tr>
+    <tr>
+      <th>Day 28</th>
+      <td>656.80</td>
+      <td>1343.20</td>
+      <td>2000.00</td>
+      <td>67.2%</td>
+    </tr>
+    <tr>
+      <th>Day 29</th>
+      <td>584.74</td>
+      <td>1415.26</td>
+      <td>2000.00</td>
+      <td>70.8%</td>
+    </tr>
+    <tr>
+      <th>Day 30</th>
+      <td>510.00</td>
+      <td>1490.00</td>
+      <td>2000.00</td>
+      <td>74.5%</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
 
 </details>
 <!-- END TABLE:warehouse -->
