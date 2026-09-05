@@ -147,7 +147,7 @@ A solved snapshot can be exported from `ot_attainment_table`.
 <summary>Material order plan</summary>
 
 <details>
-<summary>Material orders — part 1</summary>
+<summary>Material orders -- Sorted by Material</summary>
 
 <table border="1" class="dataframe">
   <thead>
@@ -330,7 +330,7 @@ A solved snapshot can be exported from `ot_attainment_table`.
 </details>
 
 <details>
-<summary>Material orders — part 2</summary>
+<summary>Material orders -- Sorted by Day</summary>
 
 <table border="1" class="dataframe">
   <thead>
