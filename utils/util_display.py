@@ -77,8 +77,38 @@ def export_notebook_tables(notebook_path, output_dir="git_tables"):
     """Export saved notebook tables without changing their layout or formatting."""
     
     import json
+    import re
     from pathlib import Path
-    from html import escape
+    from html import escape, unescape
+
+    def output_text(value):
+        """Normalize notebook text fields, which may be strings or line lists."""
+        if isinstance(value, list):
+            return "".join(value)
+        return value or ""
+
+    def clean_title(value):
+        """Return the last non-empty output line as a compact table title."""
+        lines = [line.strip() for line in output_text(value).splitlines() if line.strip()]
+        if not lines:
+            return None
+
+        title = re.sub(r"^#{1,6}\s*", "", lines[-1])
+        return title.strip(" *_`") or None
+
+    def caption_title(table_html):
+        """Read a pandas Styler caption directly from its rendered HTML."""
+        match = re.search(
+            r"<caption\b[^>]*>(.*?)</caption>",
+            table_html,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        if match is None:
+            return None
+
+        title = re.sub(r"<[^>]+>", "", match.group(1))
+        title = unescape(title)
+        return " ".join(title.split()) or None
 
     # Read from notebook_path
     nb_path = Path(notebook_path)
@@ -90,24 +120,39 @@ def export_notebook_tables(notebook_path, output_dir="git_tables"):
 
     blocks = []
 
-    for cell in notebook["cells"]:
-        title = "Notebook table"
+    for cell_number, cell in enumerate(notebook["cells"], start=1):
+        pending_title = None
 
         for output in cell.get("outputs", []):
-            if output.get("output_type") == "stream":
-                title = "".join(output.get("text", [])).strip() or title
+            data = output.get("data", {})
 
-            table_html = "".join(
-                output.get("data", {}).get("text/html", [])
-            )
+            markdown_title = clean_title(data.get("text/markdown", ""))
+            if markdown_title:
+                pending_title = markdown_title
+
+            if output.get("output_type") == "stream":
+                stream_title = clean_title(output.get("text", ""))
+                if stream_title:
+                    pending_title = stream_title
+
+            table_html = output_text(data.get("text/html", ""))
 
             if "<table" in table_html:
+                title = caption_title(table_html) or pending_title
+                if title is None:
+                    raise ValueError(
+                        f"Table {len(blocks) + 1} in notebook cell {cell_number} "
+                        "has no title. Add a Styler caption or print/display a "
+                        "title immediately before the table."
+                    )
+
                 blocks.append(
                     f"<details>\n"
                     f"<summary>{escape(title)}</summary>\n\n"
                     f"{table_html}\n\n"
                     f"</details>"
                 )
+                pending_title = None
 
     if not blocks:
         raise ValueError(

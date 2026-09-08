@@ -1,5 +1,5 @@
 <details>
-<summary>Notebook table</summary>
+<summary>Material Order Plan — Grouped by Material</summary>
 
 <style type="text/css">
 #T_a07e1 th.col_heading {
@@ -473,7 +473,7 @@
 </details>
 
 <details>
-<summary>Notebook table</summary>
+<summary>Material Order Plan — Grouped by Order Day</summary>
 
 <style type="text/css">
 #T_d57ca th.col_heading {
@@ -983,7 +983,7 @@
 </details>
 
 <details>
-<summary>Notebook table</summary>
+<summary>Material Inventory and Production Requirements — Grouped by Material</summary>
 
 <style type="text/css">
 #T_d4cc8 th.col_heading {
@@ -3261,7 +3261,7 @@
 </details>
 
 <details>
-<summary>Notebook table</summary>
+<summary>Material Inventory and Production Requirements — Grouped by Day</summary>
 
 <style type="text/css">
 #T_17bfb th.col_heading {
@@ -5619,7 +5619,7 @@
 </details>
 
 <details>
-<summary>Notebook table</summary>
+<summary>Daily Warehouse Occupation</summary>
 
 <div>
 <style scoped>

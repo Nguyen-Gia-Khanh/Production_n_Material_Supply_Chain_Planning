@@ -1,5 +1,5 @@
 <details>
-<summary>OT OBJECTIVE SUMMARY</summary>
+<summary>Overtime Objective Summary</summary>
 
 <style type="text/css">
 </style>
@@ -30,7 +30,7 @@
 </details>
 
 <details>
-<summary>OT DEMAND ATTAINMENT</summary>
+<summary>Overtime Demand Attainment by Product</summary>
 
 <style type="text/css">
 </style>
@@ -144,7 +144,7 @@
 </details>
 
 <details>
-<summary>FINISHED OT OUTPUT</summary>
+<summary>Finished-Product Overtime Output by Day</summary>
 
 <style type="text/css">
 </style>
@@ -533,7 +533,7 @@
 </details>
 
 <details>
-<summary>OVERTIME PRODUCTION SCHEDULE</summary>
+<summary>Overtime Production Schedule by Line and Day</summary>
 
 <style type="text/css">
 #T_9864f th.col_heading {
@@ -2554,7 +2554,7 @@
 </details>
 
 <details>
-<summary>OVERTIME LABOR REQUIREMENT</summary>
+<summary>Overtime Labor Requirements by Line and Day</summary>
 
 <style type="text/css">
 #T_b312a th.col_heading {
@@ -6468,7 +6468,7 @@
 </details>
 
 <details>
-<summary>OVERTIME WIP CARRYOVER</summary>
+<summary>Overtime Work-in-Process Carryover</summary>
 
 <style type="text/css">
 </style>
@@ -8516,7 +8516,7 @@
 </details>
 
 <details>
-<summary>ENDING OT-ONLY WIP SNAPSHOT</summary>
+<summary>Ending Overtime WIP Snapshot</summary>
 
 <div>
 <style scoped>

@@ -1,5 +1,5 @@
 <details>
-<summary>OPENING WIP FROM PREVIOUS-SESSION SNAPSHOT</summary>
+<summary>Opening WIP from Previous Planning Session</summary>
 
 <div>
 <style scoped>
@@ -197,7 +197,7 @@
 </details>
 
 <details>
-<summary>OBJECTIVE SUMMARY</summary>
+<summary>Regular Production Objective Summary</summary>
 
 <style type="text/css">
 </style>
@@ -228,8 +228,7 @@
 </details>
 
 <details>
-<summary>Schedule exported to xlconfigs\material_input.xlsm → Production_Schedule!B4
-FINISHED-PRODUCT DAILY SCHEDULE</summary>
+<summary>Finished-Product Daily Schedule</summary>
 
 <div>
 <style scoped>
@@ -497,7 +496,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>FORECAST ATTAINMENT</summary>
+<summary>Forecast Attainment by Product</summary>
 
 <style type="text/css">
 </style>
@@ -600,7 +599,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>REGULAR PRODUCTION SCHEDULE</summary>
+<summary>Regular Production Schedule by Line, Shift, and Day</summary>
 
 <style type="text/css">
 #T_5333a th.col_heading {
@@ -6295,7 +6294,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>DAILY REGULAR LINE OUTPUT</summary>
+<summary>Daily Regular Output by Line</summary>
 
 <style type="text/css">
 </style>
@@ -8000,7 +7999,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>REGULAR WORKER-HOURS REMAINING</summary>
+<summary>Remaining Regular Worker-Hours by Line and Shift</summary>
 
 <style type="text/css">
 #T_5b996 th.col_heading {
@@ -10737,7 +10736,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>UNDER-70%-TIME UNUSED-SALARY COST</summary>
+<summary>Idle Salary Cost Below 70% Time Utilization</summary>
 
 <style type="text/css">
 </style>
@@ -13809,7 +13808,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>SOLVED REGULAR LINE-SHIFT TIME UTILIZATION</summary>
+<summary>Regular Line-Shift Time Utilization</summary>
 
 <style type="text/css">
 </style>
@@ -14108,7 +14107,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>REGISTERED SPARE LINES WITH NO CURRENT WORKERS</summary>
+<summary>Spare Lines Registered Without Workers</summary>
 
 <div>
 <style scoped>
@@ -14155,7 +14154,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>PRODUCT ROUTES</summary>
+<summary>Product Process Routes</summary>
 
 <div>
 <style scoped>
@@ -14226,7 +14225,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>WORK-IN-PROCESS CARRYOVER</summary>
+<summary>Regular Work-in-Process Carryover</summary>
 
 <style type="text/css">
 #T_ab4c8 th.col_heading {
@@ -30521,7 +30520,7 @@ FINISHED-PRODUCT DAILY SCHEDULE</summary>
 </details>
 
 <details>
-<summary>ENDING WIP SNAPSHOT FOR THE NEXT PLANNING SESSION</summary>
+<summary>Ending WIP Snapshot for Next Planning Session</summary>
 
 <div>
 <style scoped>
